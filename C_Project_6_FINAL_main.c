@@ -45,8 +45,8 @@ int main(int argc, char *argv[]) {
 	//as for an ongoing execution bug that stalls the program.
 	printf("What two numbers do you want for the lower and upper limit?\n");
 	printf("It can be any number as long it's an interger between 1 to 350\n");
-	scanf("%d\n", &lower_limit);
-	scanf("%d\n" , &upper_limit);
+	scanf("%d", &lower_limit);
+	scanf("%d" , &upper_limit);
 
 	//as for another project reuqirement the range must be within 1 to 350.
 	//this algorithim is supposed to ask the user to resummit the numbers if it doesn't fall under 1 to 350. 
