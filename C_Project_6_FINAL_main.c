@@ -51,17 +51,17 @@ int main(int argc, char *argv[]) {
 	//as for another project reuqirement the range must be within 1 to 350.
 	//this algorithim is supposed to ask the user to resummit the numbers if it doesn't fall under 1 to 350. 
 	//this is the likely suspect that is triggering the execution bug as it keeps asking for 
-	/*while (lower_limit < 1 || lower_limit > 350){
+	while (lower_limit < 1 || lower_limit > 350){
 		printf("You resumit the lower_limit\n");
 		printf("It's not within the limit of 1 to 350\n");
-		scanf("%d\n", &lower_limit);
+		scanf("%d", &lower_limit);
 	}
 
 	while (upper_limit < 1 || upper_limit > 350){
 		printf("You resumit the upper_limit\n");
 		printf("It's not within the limit of 1 to 350\n");
-		scanf("%d\n" , &upper_limit);
-	}*/
+		scanf("%d" , &upper_limit);
+	}
 
 	//this is the alogirthm that checks the array for the following conditions
 	//due to the execution error involving the range, their conditions has been temporarily set aside
@@ -127,6 +127,11 @@ int main(int argc, char *argv[]) {
 	printf("The sum of the digit numbers within the range is: %d\n", dig_sum);
 	
 	printf("\n\nThe average of the numbers is: %.2f\n", avg);
+
+	if (div_avg = 0){
+		printf("There is no \n");
+	}
+
 	printf("The average of the divisible numbers is %.2f\n", div_avg);
 	printf("The average of the digit numbers is %.2f\n", dig_avg);
 	
