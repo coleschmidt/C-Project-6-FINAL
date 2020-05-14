@@ -17,7 +17,7 @@ int main(int argc, char *argv[]) {
 	float avg = 0, div_avg = 0, dig_avg = 0;
 	
 	//empty values to be declared by user input
-	int num, count, lower_limit, upper_limit;
+	int num, count, lower_limit = 1, upper_limit = 20;
 
 	int div_count = 0, digit_count = 0; 
 	
@@ -67,11 +67,11 @@ int main(int argc, char *argv[]) {
 	//due to the execution error involving the range, their conditions has been temporarily set aside
 	for (num = 0; num < count; ++num)
 	{
-		if ((array[num] % 7) == 0 /*&& array[num] >= lower_limit && array[num] <= upper_limit*/){
+		if ((array[num] % 7) == 0 && array[num] >= lower_limit && array[num] <= upper_limit){
 			divisible[div_count] = array[num];
 			div_count++;
 		}
-		if ((array[num]) % 10 == 7 /*&& array[num] >= lower_limit && array[num] <= upper_limit*/)
+		if ((array[num]) % 10 == 7 && array[num] >= lower_limit && array[num] <= upper_limit)
 		{
 			digits[digit_count] = array[num];
 			digit_count++;
