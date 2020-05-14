@@ -43,10 +43,10 @@ int main(int argc, char *argv[]) {
 	//as for the requirement of the project, the checked numbers must be within a range
 	//this is an algorithm that asks the user what the numbers they want the range to be within
 	//as for an ongoing execution bug that stalls the program.
-	printf("What two numbers do you want for the lower and upper limit?\n");
+	printf("\nWhat two numbers do you want for the lower and upper limit?\n");
 	printf("It can be any number as long it's an interger between 1 to 350\n");
 	scanf("%d", &lower_limit);
-	scanf("%d" , &upper_limit);
+	scanf("%d", &upper_limit);
 
 	//as for another project reuqirement the range must be within 1 to 350.
 	//this algorithim is supposed to ask the user to resummit the numbers if it doesn't fall under 1 to 350. 
@@ -126,14 +126,26 @@ int main(int argc, char *argv[]) {
 	printf("The sum of the divisible numbers within the range is: %d\n", div_sum);
 	printf("The sum of the digit numbers within the range is: %d\n", dig_sum);
 	
-	printf("\n\nThe average of the numbers is: %.2f\n", avg);
-
-	if (div_avg = 0){
-		printf("There is no \n");
+	if (avg > 0) {
+		printf("\n\nThe average of the numbers is: %.2f\n", avg);
+	}
+	else{
+		printf("The average cannot be caluclated from the numbers\n");
 	}
 
-	printf("The average of the divisible numbers is %.2f\n", div_avg);
-	printf("The average of the digit numbers is %.2f\n", dig_avg);
+	if (div_avg > 0){
+		printf("The average of the divisible numbers is %.2f\n", div_avg);
+	}
+	else{
+		printf("The average cannot be caluclated from the divisible numbers\n");
+	}
+	
+	if (dig_avg > 0){
+		printf("The average of the digit numbers is %.2f\n", dig_avg);
+	}
+	else{
+		printf("The average cannot be caluclated from the digit numbers\n");
+	}
 	
 	return 0;
 }
