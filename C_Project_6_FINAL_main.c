@@ -17,7 +17,7 @@ int main(int argc, char *argv[]) {
 	float avg = 0, div_avg = 0, dig_avg = 0;
 	
 	//empty values to be declared by user input
-	int num, count, lower_limit = 1, upper_limit = 20;
+	int num, count, lower_limit, upper_limit;
 
 	int div_count = 0, digit_count = 0; 
 	
