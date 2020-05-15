@@ -17,7 +17,7 @@ int main(int argc, char *argv[]) {
 	
 
 	//empty values to be declared by user input 
-	int num, count, lower_limit, upper_limit;
+	int count, lower_limit, upper_limit;
 
 
 	//empty value for the for loops to work with
@@ -61,7 +61,7 @@ int main(int argc, char *argv[]) {
 	//as for another project reuqirement the range must be within 1 to 350.
 	//this algorithim is supposed to ask the user to resummit the numbers if it doesn't fall under 1 to 350. 
 	while (lower_limit < 1 || lower_limit > 350){
-		printf("You resumit the lower_limit\n");
+		printf("You must resumit the lower_limit\n");
 		printf("It's not within the limit of 1 to 350\n");
 		scanf("%d", &lower_limit);
 	}
@@ -168,7 +168,7 @@ int main(int argc, char *argv[]) {
 		printf("\n\nThe average of the numbers is: %.2f\n", avg);
 	}
 	else{
-		printf("The average cannot be caluclated from the numbers\n");
+		printf("The average cannot be calculated from the numbers\n");
 	}
 
 
@@ -176,7 +176,7 @@ int main(int argc, char *argv[]) {
 		printf("The average of the divisible numbers is %.2f\n", div_avg);
 	}
 	else{
-		printf("The average cannot be caluclated from the divisible numbers\n");
+		printf("The average cannot be calculated from the divisible numbers\n");
 	}
 	
 
@@ -184,7 +184,7 @@ int main(int argc, char *argv[]) {
 		printf("The average of the digit numbers is %.2f\n", dig_avg);
 	}
 	else{
-		printf("The average cannot be caluclated from the digit numbers\n");
+		printf("The average cannot be calculated from the digit numbers\n");
 	}
 	
 	return 0;
